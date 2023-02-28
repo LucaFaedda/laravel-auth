@@ -26,9 +26,9 @@ class StoreProjectRequest extends FormRequest
     {
         return [
             'title' => ['required', 'max:10'],
-            'data_progetto' => ['nullable'],
+            'data_progetto' => ['nullable'],// se non fosse nullable non me li prende nel form create
             'difficoltà' => ['required'],
-            'descrizione' => ['nullable']
+            'descrizione' => ['nullable'] // se non fosse nullable non me li prende nel form create
         ];
     }
 }

@@ -3,6 +3,10 @@
 <div class="container ">
     <div class="row mt-5">
         <div class="col-12 ">
+          @if(session('message'))
+        <div class="alert alert-success">
+          @endif{{session('message')}}
+        </div>
             <h2 class="text-center text-danger">Lista progetti</h2>
             <table class="table  table-striped">
                 <thead>
