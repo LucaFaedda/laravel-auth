@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Models\Project;
 
 class StoreProjectRequest extends FormRequest
 {
@@ -24,10 +25,10 @@ class StoreProjectRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => ['required', 'unique:projects', 'max:10'],
-            'data_progetto' => ['required'],
+            'title' => ['required', 'max:10'],
+            'data_progetto' => ['nullable'],
             'difficoltà' => ['required'],
-            'descrizione' => ['required']
+            'descrizione' => ['nullable']
         ];
     }
 }

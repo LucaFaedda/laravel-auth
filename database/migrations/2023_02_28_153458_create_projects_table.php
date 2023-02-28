@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('title', 10);
-            $table->date('data_progetto');
+            $table->date('data_progetto')->nullable();
             $table->float('difficoltà');
-            $table->text('descrizione');
+            $table->text('descrizione')->nullable();
             $table->timestamps();
         });
     }

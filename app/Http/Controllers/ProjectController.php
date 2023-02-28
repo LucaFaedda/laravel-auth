@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class ProjectController extends Controller
 {
@@ -37,15 +39,22 @@ class ProjectController extends Controller
      */
     public function store(StoreProjectRequest $request)
     {
+      
         $form_data = $request->validated();
-        // $newproject = new Project();
-        // $newproject->fill($form_data);
-        // $newproject->save();
-        dd($form_data);
+        $newproject = new Project();
+        $newproject->fill($form_data);
+        // dd($request->data_progetto);
+        // $newproject->title = $request->title;
+        // $newproject->data_progetto = $request->data_progetto;
+        // $newproject->difficoltà = $request->difficoltà;
+        // $newproject->descizione = $request->descizione;
 
-        $newproject = Project::create($form_data);
+        $newproject->save();
+        
 
-        return redirect()->route('admin.projects.index',$newproject);
+   
+
+    return redirect()->route('admin.projects.index' );
     }
 
     /**
