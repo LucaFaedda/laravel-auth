@@ -3,6 +3,7 @@
 <div class="container ">
     <div class="row mt-5">
         <div class="col-12 ">
+            <h2 class="text-center text-danger">Lista progetti</h2>
             <table class="table  table-striped">
                 <thead>
                   <tr>
@@ -26,6 +27,7 @@
                  
                 </tbody>
               </table>
+              <a class="btn btn-success mt-3" href="{{route('admin.projects.create')}}">Aggiungi Elemento</a>
         </div>
     </div>
 </div>
