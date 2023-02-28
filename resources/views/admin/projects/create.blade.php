@@ -20,7 +20,9 @@
                                     </div>
                                     @endif
                                     <div class="col-8">
-
+                                        @error('title')
+                                            <p class="text-danger fw-bold">{{$message}}</p>
+                                        @enderror
                                         <label class="control-label mb-2 fw-bold ">Titolo</label>
                                         <input type="text" name="title" class="form-control" placeholder="Inserisci il titolo">
                                     </div>
@@ -28,9 +30,12 @@
                                         <label class="control-label mb-2 fw-bold ">Data del progetto</label>
                                         <input type="date" name="data_progetto"class="form-control"  placeholder="Data del progetto"></input>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-5">
+                                        @error('difficoltà')
+                                            <p class="text-danger fw-bold">{{$message}}</p>
+                                         @enderror
                                         <label class="control-label my-2 fw-bold ">Difficoltà</label>
-                                        <input type="number" name="difficoltà" class="form-control" ">
+                                        <input type="number" name="difficoltà" class="form-control"  min="0" max="10">
                                     </div>
                                 </div>
                             </div>
