@@ -11,11 +11,12 @@
                 <table class="table  table-striped">
                     <thead>
                       <tr>
-                        <th >Id</th>
-                        <th >Titolo</th>
-                        <th >Data del progetto</th>
-                        <th >Difficoltà</th>
-                        <th >Descrizione</th>
+                        <th class="fw-bold">Id</th>
+                        <th class="fw-bold">Titolo</th>
+                        <th class="fw-bold">Data del progetto</th>
+                        <th class="fw-bold">Difficoltà</th>
+                        <th class="fw-bold">Descrizione</th>
+                        <th class="fw-bold">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -26,6 +27,7 @@
                             <td>{{$item->data_progetto}}</td>
                             <td>{{$item->difficoltà}}</td>
                             <td>{{$item->descrizione}}</td>
+                            <td><a href="{{route('admin.projects.show', $item->slug)}}" class="btn btn-sm" title="Maggiori Informazioni"><i class="fa-solid fa-circle-info"></i></a></td>
                         </tr>
                         @endforeach
                     
