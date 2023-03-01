@@ -7,7 +7,7 @@
             <div class="alert alert-success">
               @endif{{session('message')}}
             </div>
-                <h2 class="text-center text-danger">Lista progetti</h2>
+                <h2 class="text-center txt-personale">Lista progetti</h2>
                 <table class="table  table-striped">
                     <thead>
                       <tr>
