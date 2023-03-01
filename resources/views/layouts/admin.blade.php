@@ -42,7 +42,7 @@
                 </div>
             </div>
         </header>
-        <div class="container-fluid vh-100">
+        <div class="container-fluid  bg-personale">
             <div class="row h-100">
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark navbar-dark sidebar collapse">
                     <div class="position-sticky pt-3">
