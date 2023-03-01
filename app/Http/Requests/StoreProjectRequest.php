@@ -25,7 +25,7 @@ class StoreProjectRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => ['required', 'max:10'],
+            'title' => ['required', 'max:10', 'unique:title'],
             'data_progetto' => ['nullable'],// se non fosse nullable non me li prende nel form create
             'difficoltà' => ['required'],
             'descrizione' => ['nullable'] // se non fosse nullable non me li prende nel form create
