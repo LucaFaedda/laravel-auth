@@ -29,6 +29,13 @@
                             <td>{{$item->descrizione}}</td>
                             <td><a href="{{route('admin.projects.show', $item->slug)}}" class="btn btn-sm" title="Maggiori Informazioni"><i class="fa-solid fa-circle-info"></i></a></td>
                             <td><a href="{{route('admin.projects.edit', $item->slug)}}" class="btn btn-sm" title="Modifica"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                            <td>
+                              <form action="{{route('admin.projects.destroy', $item->slug)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-sm" title="Elimina"><i class="fa-solid fa-recycle"></i></i></button>
+                              </form>
+                          </td>
                         </tr>
                         @endforeach
                     
