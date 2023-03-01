@@ -33,7 +33,7 @@
                               <form action="{{route('admin.projects.destroy', $item->slug)}}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-sm" title="Elimina"><i class="fa-solid fa-recycle"></i></i></button>
+                                <button class="btn btn-sm confirm-delete-button" title="Elimina"><i class="fa-solid fa-recycle"></i></i></button>
                               </form>
                           </td>
                         </tr>
@@ -47,5 +47,6 @@
                 <a class="btn btn-success my-3" href="{{route('admin.projects.create')}}">Aggiungi Elemento</a>
           </div>
       </div>
+      @include('admin.projects.partials.modal_delete')
 </div>
 @endsection
