@@ -1,3 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~resources/scss/partials/_admin.scss';
 @import '~resources/scss/partials/_index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
