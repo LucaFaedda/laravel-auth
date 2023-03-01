@@ -41,8 +41,11 @@ class ProjectController extends Controller
     {
       
         $form_data = $request->validated();
+        $slug = Project::generateSlug($request->title);
+        $form_data['slug']= $slug;
         $newproject = new Project();
         $newproject->fill($form_data);
+
        
         $newproject->save();
 
