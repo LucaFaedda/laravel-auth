@@ -29,7 +29,7 @@
             <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <input class="form-control form-control-dark w-100" type="text" Placeholder="Search">
+            <input class="form-control-dark w-100 input-personale " type="text" Placeholder="Search">
             <div class="navbar nav">
                 <div class="nav-item text-nowrap ms-2">
                     <a class="nav-link text-light" href="{{ route('logout') }}" onclick="event.preventDefault();
