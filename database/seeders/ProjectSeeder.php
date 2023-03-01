@@ -23,6 +23,8 @@ class ProjectSeeder extends Seeder
             $newproject->data_progetto = $faker->date('Y_m_d');
             $newproject->difficoltà = $faker->randomDigit();
             $newproject->descrizione = $faker->paragraph();
+            $newproject->slug = Str::slug($newproject->title, '-');
+
 
             $newproject->save();
 

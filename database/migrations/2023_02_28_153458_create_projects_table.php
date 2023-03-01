@@ -19,6 +19,7 @@ return new class extends Migration
             $table->date('data_progetto')->nullable();
             $table->float('difficoltà');
             $table->text('descrizione')->nullable();
+            $table->string('slug');
             $table->timestamps();
         });
     }
