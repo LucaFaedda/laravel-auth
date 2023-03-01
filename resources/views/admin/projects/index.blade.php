@@ -31,6 +31,9 @@
                     
                     </tbody>
                 </table>
+              </div>
+              <div class="col-3">
+                
                 <a class="btn btn-success my-3" href="{{route('admin.projects.create')}}">Aggiungi Elemento</a>
           </div>
       </div>
