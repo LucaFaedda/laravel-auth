@@ -42,7 +42,7 @@
                 </div>
             </div>
         </header>
-        <div class="container-fluid vh-100 bg-personale">
+        <div class="container-fluid vh-100 ">
             <div class="row h-100">
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark navbar-dark sidebar collapse">
                     <div class="position-sticky pt-3">
@@ -66,7 +66,7 @@
                     </div>
                 </nav>
 ​
-                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-personale">
                     @yield('content')
                 </main>
             </div>
