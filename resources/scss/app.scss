@@ -1,7 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~resources/scss/partials/_admin.scss';
 @import '~resources/scss/partials/_index.scss';
+@import '~resources/scss/partials/_show.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
