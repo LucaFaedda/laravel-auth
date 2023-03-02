@@ -4,11 +4,10 @@
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">ATTENZIONE</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true" >&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <!-- span segnaposto -->
          Sei sicuro di voler cancellare l'elemento selezionato? 
          <p id="modal-item-title" class="text-danger"></p> 
         </div>
